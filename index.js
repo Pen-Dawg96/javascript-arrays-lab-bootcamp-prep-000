@@ -14,15 +14,12 @@ function destructivelyRemoveLastKitten(){
 function destructivelyRemoveFirstKitten(){
   return kittens.shift()
 }
-function appendKitten(name){
-
-  return kittens.concat(kitten1)
-
-  kittens = [...kittens, "Broom"]
+function appendKitten(name) {
+  return [...kittens, name]
 }
-function prependKitten(name){
-  return kittens
 
+function prependKitten(name) {
+  return [name, ...kittens]
 }
 function removeLastKitten(){
   return kittens.slice(0, kittens.length - 1) 
